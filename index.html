@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engr. Afnan Badar | AI Engineer & Computer Engineer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Engr. Afnan Badar - AI Engineer and Computer Engineer specializing in Deep Learning, NLP, Time-Series Generative Modeling, and Autonomous Agentic AI Workflows.">
+  <meta name="keywords" content="Afnan Badar, AI Engineer, Computer Engineer, Deep Learning, NLP, Agentic AI, LangGraph, PyTorch, TimeGAN, EcoGenAI, Speech to Speech">
+  <meta name="author" content="Engr. Afnan Badar">
+  
+  <meta property="og:title" content="Engr. Afnan Badar | AI Engineer & Computer Engineer">
+  <meta property="og:description" content="Specializing in Deep Learning, NLP, and Autonomous Agentic AI Workflows.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0f19'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='42' fill='%2300f2fe'>AB</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient Glow Atmosphere -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Sticky/Floating Glassmorphism Navbar
+       ========================================================================== -->
+  <nav class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand" aria-label="Engr. Afnan Badar Home">
+        <div class="nav-logo-badge">AB</div>
+        <div>
+          <span class="nav-brand-text">Engr. Afnan Badar</span>
+          <span class="nav-brand-sub">AI & Computer Engineer</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#simulator" class="nav-link">Agent Terminal</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button in Header -->
+      <a href="#contact" class="nav-cta-btn">
+        <span>Let's Talk</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#about" class="mobile-nav-link">About & Philosophy</a>
+      <a href="#projects" class="mobile-nav-link">Featured Projects</a>
+      <a href="#simulator" class="mobile-nav-link">Agent Simulation Terminal</a>
+      <a href="#skills" class="mobile-nav-link">Technical Skills</a>
+      <a href="#research" class="mobile-nav-link">Research & Academic</a>
+      <a href="#contact" class="mobile-nav-link">Get in Touch</a>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       Hero Section with Interactive 3D Canvas
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Interactive Neural Network Particle Graph Canvas -->
+    <canvas id="neural-canvas" class="hero-canvas" aria-label="Interactive Neural Network Visualization"></canvas>
+
+    <div class="container hero-content">
+      <!-- Live Status Badge -->
+      <div class="status-pill">
+        <span class="status-pulse"></span>
+        <span>Available for AI Engineering & Autonomous Systems Roles</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero-title">
+        Engr. <span class="text-gradient-cyan">Afnan Badar</span>
+      </h1>
+
+      <!-- Dynamic Sub-headline with Live Typing Effect -->
+      <div class="hero-subtitle-container">
+        <span class="hero-subtitle text-gradient-dual" id="dynamic-headline">AI Engineer & Computer Engineer</span><span class="typing-cursor">|</span>
+      </div>
+
+      <!-- Quick Academic Badges -->
+      <div class="academic-badges">
+        <div class="academic-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+          <span>MS Artificial Intelligence (UET Lahore)</span>
+        </div>
+        <div class="academic-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <span>BS Computer Engineering (BUITEMS)</span>
+        </div>
+      </div>
+
+      <p class="hero-summary">
+        Architecting end-to-end artificial intelligence systems across the full compute stack — from ultra-low power edge machine learning triage and generative time-series modeling to speech-to-speech cross-lingual translation and autonomous multi-agent reasoning chains.
+      </p>
+
+      <!-- Dual CTA Buttons -->
+      <div class="hero-cta-group">
+        <a href="#contact" class="btn-primary">
+          <span>Get in Touch</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#projects" class="btn-secondary">
+          <span>Explore Projects</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="7 13 12 18 17 13"></polyline>
+            <polyline points="7 6 12 11 17 6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Live Telemetry Stats -->
+      <div class="hero-telemetry">
+        <div class="telemetry-card">
+          <span class="telemetry-val text-gradient-cyan">4+</span>
+          <span class="telemetry-lbl">Core AI Systems</span>
+        </div>
+        <div class="telemetry-card">
+          <span class="telemetry-val text-gradient-violet">&lt;0.02 mJ</span>
+          <span class="telemetry-lbl">Edge Triage Gate</span>
+        </div>
+        <div class="telemetry-card">
+          <span class="telemetry-val text-gradient-emerald">100%</span>
+          <span class="telemetry-lbl">Chronological Holdout</span>
+        </div>
+        <div class="telemetry-card">
+          <span class="telemetry-val text-gradient-cyan">LangGraph</span>
+          <span class="telemetry-lbl">Autonomous Chains</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Section & Engineering Philosophy
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-content">
+          <div class="section-tag">Engineering Background</div>
+          <h2 class="section-title">Bridging Embedded Silicon & State-of-the-Art Deep Learning</h2>
+          <p>
+            With formal training in <strong>Computer Engineering (BUITEMS)</strong> and advanced research in <strong>Artificial Intelligence (UET Lahore)</strong>, I look at machine learning through both an architectural and algorithmic lens.
+          </p>
+          <p>
+            Rather than treating models as black-box abstractions, I design systems with deep awareness of memory bandwidth, inference latency, cache hierarchy, and empirical validation. From edge microcontroller triage gates consuming microwatts to multi-agent distributed LLM workflows operating via the Model Context Protocol (MCP), my focus is reproducible, high-throughput AI engineering.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <h4>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--cyan-primary)" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                Generative Modeling
+              </h4>
+              <p>TimeGAN & synthetic multivariate time-series generation under severe observational scarcity.</p>
+            </div>
+            <div class="highlight-box">
+              <h4>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--violet-primary)" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+                Autonomous Agents
+              </h4>
+              <p>Self-correcting LangGraph state graphs, MCP protocol, and vector memory orchestration.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architectural Visual Card -->
+        <div class="about-visual-card">
+          <div style="margin-bottom: 1.5rem;">
+            <span class="section-tag" style="font-size: 0.75rem;">Full-Stack AI Architecture</span>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Multi-Tier Compute Ecosystem</h3>
+          </div>
+
+          <div class="arch-layer-list">
+            <div class="arch-layer-item">
+              <div class="arch-layer-icon cyan">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="arch-layer-title">Layer 3: Autonomous Agent Orchestration</div>
+                <div class="arch-layer-desc">LangGraph state graphs, MCP tool routing, ChromaDB semantic memory.</div>
+              </div>
+            </div>
+
+            <div class="arch-layer-item">
+              <div class="arch-layer-icon violet">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="arch-layer-title">Layer 2: Deep Learning & Speech NLP</div>
+                <div class="arch-layer-desc">PyTorch sequence models, Conformer acoustic encoders, TimeGAN synthesis.</div>
+              </div>
+            </div>
+
+            <div class="arch-layer-item">
+              <div class="arch-layer-icon emerald">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="arch-layer-title">Layer 1: Edge Computing & Hardware Triage</div>
+                <div class="arch-layer-desc">Low-power Naive Bayes gates (&lt;0.02 mJ), MCU signal DSP, zero-leakage splits.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Featured Projects Section
+       ========================================================================== -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Applied ML & AI Systems</div>
+        <h2 class="section-title">Featured Engineering Projects</h2>
+        <p class="section-description">
+          Engineered repositories with rigorous evaluation benchmarks, reproducible pipelines, and interactive deployment suites.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-tab-btn active" data-filter="all">All Systems</button>
+        <button class="filter-tab-btn" data-filter="edge-ai">Edge AI & Generative Modeling</button>
+        <button class="filter-tab-btn" data-filter="nlp">NLP & Speech AI</button>
+        <button class="filter-tab-btn" data-filter="vision">Computer Vision</button>
+        <button class="filter-tab-btn" data-filter="agentic-ai">Agentic AI & Orchestration</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- 1. EcoGenAI -->
+        <article class="project-card accent-cyan" data-category="edge-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-cyan">Edge AI &amp; Generative Modeling</span>
+            <button class="btn-view-details" data-project="ecogenai" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">EcoGenAI</h3>
+          <p class="project-card-description">
+            Edge-optimized triage and synthetic data generation framework integrating Naive Bayes classification and Hidden Markov Models with TimeGAN augmentation for downstream drought-risk prediction under extreme data scarcity.
+          </p>
+
+          <!-- Metrics Row -->
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">100%</span>
+              <span class="metric-col-lbl">Severe Recall</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">&lt;0.02 mJ</span>
+              <span class="metric-col-lbl">Energy / Sample</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">+3.01%</span>
+              <span class="metric-col-lbl">Scarcity Gain</span>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">HMM</span>
+            <span class="project-tag">Naive Bayes</span>
+            <span class="project-tag">Edge AI</span>
+            <span class="project-tag">TimeGAN</span>
+            <span class="project-tag">PyTorch</span>
+          </div>
+
+          <!-- Actions -->
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <!-- SVG GitHub Icon -->
+              <a href="https://github.com/afnanmengal/EcoGenAI" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/EcoGenAI#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="ecogenai">Specs</button>
+          </div>
+        </article>
+
+        <!-- 2. Neurolingo -->
+        <article class="project-card accent-violet" data-category="nlp">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-violet">Speech AI &amp; NLP</span>
+            <button class="btn-view-details" data-project="neurolingo" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Neurolingo</h3>
+          <p class="project-card-description">
+            End-to-end speech-to-speech natural language translation engine bridging Balochi and English with custom acoustic and sequence models for low-resource dialect preservation.
+          </p>
+
+          <!-- Metrics Row -->
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">Balochi ⇄ En</span>
+              <span class="metric-col-lbl">Language Pair</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">S2ST</span>
+              <span class="metric-col-lbl">Direct Speech</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">&lt;38ms</span>
+              <span class="metric-col-lbl">Vocoder Latency</span>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="project-tags">
+            <span class="project-tag">PyTorch</span>
+            <span class="project-tag">Speech-to-Speech</span>
+            <span class="project-tag">NLP</span>
+            <span class="project-tag">Deep Learning</span>
+            <span class="project-tag">Transformers</span>
+          </div>
+
+          <!-- Actions -->
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <!-- SVG GitHub Icon -->
+              <a href="https://github.com/afnanmengal/neurolingo" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/neurolingo#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="neurolingo">Specs</button>
+          </div>
+        </article>
+
+        <!-- 3. Plant Disease Classifier -->
+        <article class="project-card accent-emerald" data-category="vision">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-emerald">Computer Vision</span>
+            <button class="btn-view-details" data-project="plant-disease" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Plant Disease Classifier</h3>
+          <p class="project-card-description">
+            Deep learning diagnostic tool classifying agricultural leaf pathologies under constrained, low-quality image conditions with real-time Grad-CAM lesion explainability and Streamlit desktop integration.
+          </p>
+
+          <!-- Metrics Row -->
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">98.4%</span>
+              <span class="metric-col-lbl">Accuracy</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">&lt;45ms</span>
+              <span class="metric-col-lbl">Latency</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">Grad-CAM</span>
+              <span class="metric-col-lbl">Localization</span>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="project-tags">
+            <span class="project-tag">Computer Vision</span>
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">TensorFlow/PyTorch</span>
+            <span class="project-tag">CNN</span>
+            <span class="project-tag">Grad-CAM</span>
+          </div>
+
+          <!-- Actions -->
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <!-- SVG GitHub Icon -->
+              <a href="https://github.com/afnanmengal/plant-disease-classifier" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/plant-disease-classifier#live-app" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Live App</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="plant-disease">Specs</button>
+          </div>
+        </article>
+
+        <!-- 4. Autonomous Agent Workflows -->
+        <article class="project-card accent-cyan" data-category="agentic-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-cyan">Agentic AI &amp; LLMs</span>
+            <button class="btn-view-details" data-project="autonomous-agents" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Autonomous Agent Workflows</h3>
+          <p class="project-card-description">
+            Multi-agent reasoning chains and context-aware tool orchestration using LangChain, LangGraph, Model Context Protocol (MCP), and vector databases for self-correcting plan-and-solve execution trajectories.
+          </p>
+
+          <!-- Metrics Row -->
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">LangGraph</span>
+              <span class="metric-col-lbl">State Graph</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">MCP</span>
+              <span class="metric-col-lbl">Tool Protocol</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">Chroma</span>
+              <span class="metric-col-lbl">Vector Memory</span>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="project-tags">
+            <span class="project-tag">LangGraph</span>
+            <span class="project-tag">LangChain</span>
+            <span class="project-tag">Vector DB</span>
+            <span class="project-tag">MCP</span>
+            <span class="project-tag">Autonomous Agents</span>
+          </div>
+
+          <!-- Actions -->
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <!-- SVG GitHub Icon -->
+              <a href="https://github.com/afnanmengal/customer_support_agent" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/customer_support_agent#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="autonomous-agents">Specs</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive Live Agent Reasoning Sandbox / Terminal
+       ========================================================================== -->
+  <section class="simulator-section" id="simulator">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Interactive AI Telemetry</div>
+        <h2 class="section-title">Autonomous Agent Reasoning Sandbox</h2>
+        <p class="section-description">
+          Experience real-time execution traces of multi-agent LangGraph orchestrations, edge gating algorithms, and speech translation streaming.
+        </p>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">afnan-agent-orchestrator@v2.4 ~ bash</span>
+          </div>
+
+          <div class="terminal-controls">
+            <label for="scenario-select" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; overflow: hidden;">Select Scenario</label>
+            <select id="scenario-select" class="scenario-select" aria-label="Select Execution Scenario">
+              <option value="agentic">Scenario: Multi-Agent LangGraph + MCP Tool Chain</option>
+              <option value="ecogen">Scenario: EcoGenAI Edge Triage &amp; TimeGAN Stream</option>
+              <option value="speech">Scenario: Neurolingo Balochi ⇄ English S2ST</option>
+            </select>
+            <div class="terminal-status-badge" id="terminal-status">
+              <span class="status-pulse green"></span> System Idle
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal-body" id="terminal-stream" role="log" aria-live="polite">
+          <div class="terminal-line text-muted">
+            <span class="terminal-time">00:00:00</span> [READY] Agent sandbox initialized. Select an execution scenario and press "Execute Agent Trace" to inspect real-time tool orchestration.
+          </div>
+        </div>
+
+        <div class="terminal-footer">
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
+            Protocol: MCP 1.0 | Engine: LangGraph State Graph | Precision: FP16
+          </span>
+          <button id="run-agent-btn" class="btn-terminal-run">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Execute Agent Trace</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Technical Skills Matrix Section
+       ========================================================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Competency Matrix</div>
+        <h2 class="section-title">Technical Skills &amp; Stack</h2>
+        <p class="section-description">
+          Categorized proficiencies spanning deep mathematical modeling, neural architectures, distributed agents, and embedded systems programming.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- 1. Core AI & ML -->
+        <div class="skill-category-card accent-cyan">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: var(--cyan-dim); color: var(--cyan-primary); border: 1px solid var(--cyan-border);">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title">Core AI &amp; ML</h3>
+          </div>
+
+          <div class="skill-badges-container">
+            <div class="skill-badge">
+              <span>Deep Learning</span>
+            </div>
+            <div class="skill-badge">
+              <span>Natural Language Processing (NLP)</span>
+            </div>
+            <div class="skill-badge">
+              <span>Computer Vision</span>
+            </div>
+            <div class="skill-badge">
+              <span>Autonomous Agents</span>
+            </div>
+            <div class="skill-badge">
+              <span>Generative Time-Series (TimeGAN)</span>
+            </div>
+            <div class="skill-badge">
+              <span>Speech-to-Speech Translation</span>
+            </div>
+            <div class="skill-badge">
+              <span>Cost-Sensitive Classification</span>
+            </div>
+            <div class="skill-badge">
+              <span>Hidden Markov Models (HMM)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Frameworks & Libraries -->
+        <div class="skill-category-card accent-violet">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: var(--violet-dim); color: var(--violet-primary); border: 1px solid var(--violet-border);">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title">Frameworks &amp; Libraries</h3>
+          </div>
+
+          <div class="skill-badges-container">
+            <div class="skill-badge">
+              <span>PyTorch</span>
+            </div>
+            <div class="skill-badge">
+              <span>TensorFlow</span>
+            </div>
+            <div class="skill-badge">
+              <span>LangChain</span>
+            </div>
+            <div class="skill-badge">
+              <span>LangGraph</span>
+            </div>
+            <div class="skill-badge">
+              <span>Scikit-Learn</span>
+            </div>
+            <div class="skill-badge">
+              <span>Streamlit</span>
+            </div>
+            <div class="skill-badge">
+              <span>Hugging Face</span>
+            </div>
+            <div class="skill-badge">
+              <span>Model Context Protocol (MCP)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Languages & Tools -->
+        <div class="skill-category-card accent-emerald">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background: var(--emerald-dim); color: var(--emerald-primary); border: 1px solid var(--emerald-border);">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title">Languages &amp; Tools</h3>
+          </div>
+
+          <div class="skill-badges-container">
+            <div class="skill-badge">
+              <span>Python</span>
+            </div>
+            <div class="skill-badge">
+              <span>Dart / Flutter</span>
+            </div>
+            <div class="skill-badge">
+              <span>SQL</span>
+            </div>
+            <div class="skill-badge">
+              <span>MATLAB</span>
+            </div>
+            <div class="skill-badge">
+              <span>HTML / CSS</span>
+            </div>
+            <div class="skill-badge">
+              <span>Git &amp; GitHub</span>
+            </div>
+            <div class="skill-badge">
+              <span>Docker</span>
+            </div>
+            <div class="skill-badge">
+              <span>Vector DBs (Chroma / FAISS)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Research & Academic Background Section
+       ========================================================================== -->
+  <section class="research-section" id="research">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Academic Credentials</div>
+        <h2 class="section-title">Research &amp; Education</h2>
+        <p class="section-description">
+          Formal engineering foundations combining rigorous graduate artificial intelligence research with undergraduate hardware and embedded systems design.
+        </p>
+      </div>
+
+      <div class="academic-timeline">
+
+        <!-- MS Degree Card -->
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <div>
+              <div class="timeline-degree">Master of Science in Artificial Intelligence</div>
+              <div class="timeline-inst">University of Engineering and Technology (UET) Lahore</div>
+            </div>
+            <span class="timeline-period">2024 – Present &bull; Roll No: 2026-MS-AI-120</span>
+          </div>
+
+          <p class="timeline-desc">
+            Thesis research focused on <strong>synthetic environmental time-series generation (EcoGenAI)</strong> and empirical validation under severe observational scarcity.
+          </p>
+
+          <ul class="timeline-bullet-list">
+            <li>Investigated recurrent TimeGAN architectures versus statistical block bootstrap methods for drought risk forecasting.</li>
+            <li>Designed ultra-low-power (&lt;0.02 mJ/sample) Naive Bayes triage gates capable of achieving 100% severe event recall on chronological test holdouts.</li>
+            <li>Demonstrated a verified +3.01% Macro-F1 improvement under severe 30% real-data training partitions.</li>
+            <li>Enforced strict chronological partitioning ($N=72$ sequence windows, 2018–2024) to eliminate temporal data leakage.</li>
+          </ul>
+        </div>
+
+        <!-- BS Degree Card -->
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <div>
+              <div class="timeline-degree">Bachelor of Science in Computer Engineering</div>
+              <div class="timeline-inst">Balochistan University of Information Technology, Engineering &amp; Management Sciences (BUITEMS)</div>
+            </div>
+            <span class="timeline-period">Graduated with Honors</span>
+          </div>
+
+          <p class="timeline-desc">
+            Comprehensive foundations in computer architecture, digital signal processing (DSP), embedded microcontrollers, and hardware-software co-design.
+          </p>
+
+          <ul class="timeline-bullet-list">
+            <li>Designed and benchmarked low-level digital circuits, microprocessor pipelines, and sensor interfacing busses.</li>
+            <li>Implemented real-time vibration analysis and acoustic signal filtering algorithms in C/C++ and MATLAB.</li>
+            <li>Bridged the boundary between low-level firmware registers and high-level applied machine learning inference pipelines.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact & Direct Call-to-Action Section
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Direct Collaboration</div>
+        <h2 class="section-title">Let's Build Something Exceptional</h2>
+        <p class="section-description">
+          Open for full-time AI Engineering roles, research collaborations, and production autonomous agent deployments.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left Stack: Direct WhatsApp & Credentials Cards -->
+        <div class="contact-cards-stack">
+
+          <!-- WhatsApp Primary Card -->
+          <div class="whatsapp-cta-card">
+            <div class="whatsapp-card-content">
+              <div class="whatsapp-big-icon">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                  <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.98-.277-.1-.478-.15-.68.15-.201.301-.78 0.98-.956 1.18-.175.2-.352.226-.653.076-.301-.15-1.272-.469-2.424-1.496-.896-.799-1.501-1.787-1.677-2.088-.175-.301-.019-.464.132-.614.136-.135.301-.352.452-.528.15-.176.201-.301.302-.502.1-.2.05-.377-.025-.528-.075-.15-.68-1.637-.93-2.24-.244-.588-.492-.508-.68-.518-.176-.01-.377-.01-.578-.01-.2 0-.528.075-.804.377-.276.301-1.055 1.03-1.055 2.511s1.08 2.912 1.231 3.113c.15.2 2.126 3.246 5.15 4.553.72.311 1.282.497 1.72.636.723.23 1.381.197 1.901.12.58-.087 1.78-.727 2.03-1.43.251-.703.251-1.306.176-1.43-.075-.125-.276-.201-.577-.351z"/>
+                  <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
+                </svg>
+              </div>
+              <div class="whatsapp-card-text">
+                <h3>Direct WhatsApp Link</h3>
+                <p>Connect instantly with Engr. Afnan Badar for quick technical inquiries, project consults, or direct messages.</p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+               id="contact-whatsapp-btn" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-whatsapp-direct">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.98-.277-.1-.478-.15-.68.15-.201.301-.78 0.98-.956 1.18-.175.2-.352.226-.653.076-.301-.15-1.272-.469-2.424-1.496-.896-.799-1.501-1.787-1.677-2.088-.175-.301-.019-.464.132-.614.136-.135.301-.352.452-.528.15-.176.201-.301.302-.502.1-.2.05-.377-.025-.528-.075-.15-.68-1.637-.93-2.24-.244-.588-.492-.508-.68-.518-.176-.01-.377-.01-.578-.01-.2 0-.528.075-.804.377-.276.301-1.055 1.03-1.055 2.511s1.08 2.912 1.231 3.113c.15.2 2.126 3.246 5.15 4.553.72.311 1.282.497 1.72.636.723.23 1.381.197 1.901.12.58-.087 1.78-.727 2.03-1.43.251-.703.251-1.306.176-1.43-.075-.125-.276-.201-.577-.351z"/>
+                <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
+              </svg>
+              <span>Chat on WhatsApp (+92 311 8327516)</span>
+            </a>
+          </div>
+
+          <!-- Professional Links Card -->
+          <div class="contact-info-card">
+            <!-- WhatsApp / Phone -->
+            <div class="contact-item-row">
+              <div class="contact-item-left">
+                <div class="contact-item-icon" style="color: #25D366;">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">WhatsApp / Phone</div>
+                  <div class="contact-item-val">+92 311 8327516</div>
+                </div>
+              </div>
+              <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="btn-mini-action">Message</a>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item-row">
+              <div class="contact-item-left">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Direct Email</div>
+                  <div class="contact-item-val">afnanmengal@gmail.com</div>
+                </div>
+              </div>
+              <button class="btn-mini-action copy-email-btn" title="Copy email address">Copy</button>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-item-row">
+              <div class="contact-item-left">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">GitHub Repositories</div>
+                  <div class="contact-item-val">github.com/afnanmengal</div>
+                </div>
+              </div>
+              <a href="https://github.com/afnanmengal" target="_blank" rel="noopener noreferrer" class="btn-mini-action">Visit</a>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-item-row">
+              <div class="contact-item-left">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Location</div>
+                  <div class="contact-item-val">Lahore / Quetta, Pakistan</div>
+                </div>
+              </div>
+              <span class="btn-mini-action" style="cursor: default;">PK</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Interactive Transmission Form -->
+        <div class="contact-form-card">
+          <h3>Send Direct Message</h3>
+          <p>Leave a note regarding AI architecture consulting, research, or system design.</p>
+
+          <form id="contact-form">
+            <div class="form-group-grid">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Alex Mercer" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@organization.ai" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="AI Engineering Opportunity / Project Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Project Details &amp; Objectives *</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Describe your technical requirements, architecture constraints, or timelines..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-form">
+              <span>Send Transmission</span>
+            </button>
+
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Floating High-Visibility WhatsApp Button
+       ========================================================================== -->
+  <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+     id="floating-whatsapp-btn" 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Direct WhatsApp Message with Engr. Afnan Badar">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.98-.277-.1-.478-.15-.68.15-.201.301-.78 0.98-.956 1.18-.175.2-.352.226-.653.076-.301-.15-1.272-.469-2.424-1.496-.896-.799-1.501-1.787-1.677-2.088-.175-.301-.019-.464.132-.614.136-.135.301-.352.452-.528.15-.176.201-.301.302-.502.1-.2.05-.377-.025-.528-.075-.15-.68-1.637-.93-2.24-.244-.588-.492-.508-.68-.518-.176-.01-.377-.01-.578-.01-.2 0-.528.075-.804.377-.276.301-1.055 1.03-1.055 2.511s1.08 2.912 1.231 3.113c.15.2 2.126 3.246 5.15 4.553.72.311 1.282.497 1.72.636.723.23 1.381.197 1.901.12.58-.087 1.78-.727 2.03-1.43.251-.703.251-1.306.176-1.43-.075-.125-.276-.201-.577-.351z"/>
+      <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
+    </svg>
+    <span class="floating-whatsapp-text">Chat on WhatsApp</span>
+  </a>
+
+  <!-- ==========================================================================
+       Project Details In-Depth Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="section-tag" id="modal-category" style="font-size: 0.75rem;">Category</span>
+      <h3 id="modal-title" style="font-size: 1.7rem; margin: 0.5rem 0 1rem 0; color: #ffffff;">Project Title</h3>
+      
+      <p id="modal-description" style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7;"></p>
+
+      <div class="modal-metrics-grid" id="modal-metrics"></div>
+
+      <div style="margin: 1.5rem 0;">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dim); margin-bottom: 0.75rem;">Technology Stack</h4>
+        <div class="project-tags" id="modal-tags"></div>
+      </div>
+
+      <div class="modal-footer-actions">
+        <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="project-link-btn github" style="padding: 0.75rem 1.4rem;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>Open GitHub Repository</span>
+        </a>
+        <a id="modal-demo-link" href="#" target="_blank" rel="noopener noreferrer" class="project-link-btn demo" style="padding: 0.75rem 1.4rem;">
+          <span>Launch Demo</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="copy-toast" class="toast-notice">Copied to clipboard!</div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <p>&copy; 2026 Engr. Afnan Badar. All rights reserved. Designed with modern dark glass aesthetics.</p>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://github.com/afnanmengal" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="social-link copy-email-btn" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>Email</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/neural-canvas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
