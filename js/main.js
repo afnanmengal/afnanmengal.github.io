@@ -307,15 +307,14 @@ function initAgentSimulator() {
       { text: "[SYNTHESIS] Output verified. Zero hallucinations detected. Returning finalized response.", delay: 4500, color: "text-cyan" },
       { text: "[COMPLETED] Autonomous multi-agent cycle finished in 284ms. Awaiting next prompt.", delay: 5100, color: "text-white font-bold" }
     ],
-    ecogen: [
-      { text: "[ECOGEN_BOOT] Loading empirical environmental time-series evaluation harness...", delay: 200, color: "text-cyan" },
-      { text: "[DATA_IN] Hydrological feature matrix: ERA5 + NOAA chronological partition (N=72)", delay: 600, color: "text-muted" },
-      { text: "[EDGE_TRIAGE] Activating low-power Naive Bayes gatekeeper (<0.02 mJ/sample)...", delay: 1100, color: "text-emerald" },
-      { text: "[TRIAGE_RESULT] Severe event recall: 1.0000 | Non-critical event bypassed", delay: 1700, color: "text-emerald" },
-      { text: "[TIMEGAN] Invoking recurrent generator for 1:1 synthetic sequence augmentation...", delay: 2300, color: "text-violet" },
-      { text: "[BENCHMARK] Baseline Scarcity Macro-F1: 0.3721 -> Augmented Macro-F1: 0.4022", delay: 3100, color: "text-cyan" },
-      { text: "[METRIC_GAIN] Statistically verified +3.01% Macro-F1 improvement under severe data scarcity", delay: 3800, color: "text-emerald" },
-      { text: "[STATUS] Leakage-free chronological test evaluation complete.", delay: 4400, color: "text-white font-bold" }
+    vibration: [
+      { text: "[DSP_INIT] Initializing GPU-accelerated mechanical vibration analyzer...", delay: 200, color: "text-cyan" },
+      { text: "[PORTAUDIO] Streaming 48,000 Hz continuous acoustic accelerometer channel...", delay: 600, color: "text-muted" },
+      { text: "[CUDA_FFT] Computing real-time 8192-point FFT power spectral density matrix...", delay: 1100, color: "text-violet" },
+      { text: "[HFRT] Applying envelope Hilbert transform demodulation for bearing defect detection...", delay: 1700, color: "text-emerald" },
+      { text: "[BEARING_FREQ] Peak defect harmonics within baseline tolerances: NORMAL (0.012 mm/s RMS)", delay: 2400, color: "text-emerald" },
+      { text: "[ISO_10816] Evaluating machine health against ISO 10816-3 Class II criteria...", delay: 3100, color: "text-cyan" },
+      { text: "[SEVERITY_PASS] Status: Zone A (Good / Unrestricted continuous operation)", delay: 3800, color: "text-white font-bold" }
     ],
     speech: [
       { text: "[NEUROLINGO] Initializing speech-to-speech translation pipeline...", delay: 200, color: "text-violet" },

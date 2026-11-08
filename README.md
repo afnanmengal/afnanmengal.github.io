@@ -35,14 +35,15 @@ A futuristic, high-performance personal portfolio website engineered for **Engr.
 
 5. **Featured Projects Section:**
    Interactive showcase cards with category filtering, SVG GitHub icons, and live demo buttons:
-   - **EcoGenAI:** Edge-optimized triage and synthetic data generation framework integrating Naive Bayes classification and Hidden Markov Models with TimeGAN augmentation.
    - **Neurolingo:** End-to-end speech-to-speech natural language translation engine bridging Balochi and English with custom acoustic and sequence models.
+   - **Autonomous Agent Workflows:** Multi-agent reasoning chains and context-aware tool orchestration using LangChain, LangGraph, Model Context Protocol (MCP), and local LLMs.
    - **Plant Disease Classifier:** Deep learning diagnostic tool classifying agricultural leaf pathologies under constrained, low-quality image conditions.
-   - **Autonomous Agent Workflows:** Multi-agent reasoning chains and context-aware tool orchestration using LangChain, LangGraph, Model Context Protocol (MCP), and vector databases.
+   - **Afnan's AI:** Futuristic autonomous neural assistant with adaptive hardware acceleration (GPU CUDA / CPU fallback) and multi-turn reasoning.
+   - **Vibration Analyzer:** GPU-accelerated mechanical vibration analysis, HFRT bearing demodulation, and predictive machine health monitoring.
    - **Interactive Modal:** Click "Specs" or "Details" on any card to view deep architectural breakdowns and benchmarks.
 
 6. **Live Autonomous Agent Reasoning Sandbox / Terminal:**
-   - Real-time simulation of LangGraph state graphs, MCP tool calls, EcoGenAI edge triage, and speech translation traces with syntax-highlighted streaming output.
+   - Real-time simulation of LangGraph state graphs, MCP tool calls, GPU vibration analysis, and speech translation traces with syntax-highlighted streaming output.
 
 7. **Technical Skills Matrix:**
    - **Core AI & ML:** Deep Learning, NLP, Computer Vision, Autonomous Agents, TimeGAN, HMM, Cost-Sensitive ML.
