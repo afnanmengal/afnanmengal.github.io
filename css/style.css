@@ -32,6 +32,9 @@
   --whatsapp-green: #25D366;
   --whatsapp-glow: rgba(37, 211, 102, 0.45);
 
+  --linkedin-blue: #0a66c2;
+  --linkedin-glow: rgba(10, 102, 194, 0.45);
+
   /* Typography Colors */
   --text-white: #f8fafc;
   --text-primary: #f1f5f9;
@@ -1418,6 +1421,60 @@ a {
 .btn-whatsapp-direct:hover {
   background: #20ba59;
   box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* LinkedIn Highlight Card */
+.linkedin-cta-card {
+  background: linear-gradient(135deg, rgba(10, 102, 194, 0.12), rgba(15, 23, 42, 0.85));
+  border: 1px solid rgba(10, 102, 194, 0.35);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(16px);
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.linkedin-cta-card:hover {
+  transform: translateY(-4px);
+  border-color: #0a66c2;
+  box-shadow: 0 0 35px var(--linkedin-glow);
+}
+
+.linkedin-big-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: #0a66c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(10, 102, 194, 0.4);
+}
+
+.btn-linkedin-direct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 12px;
+  background: #0a66c2;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(10, 102, 194, 0.3);
+}
+
+.btn-linkedin-direct:hover {
+  background: #084e96;
+  box-shadow: 0 0 25px rgba(10, 102, 194, 0.6);
   transform: translateY(-2px);
   color: #ffffff;
 }

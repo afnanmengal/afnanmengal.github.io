@@ -86,7 +86,7 @@ const PORTFOLIO_CONFIG = {
     whatsappNumber: "923118327516", // Direct WhatsApp (+92 311 8327516)
     whatsappMessage: "Hi Engr. Afnan, I saw your portfolio and would like to connect!",
     github: "https://github.com/afnanmengal",
-    linkedin: "https://www.linkedin.com/in/afnanbadar",
+    linkedin: "https://www.linkedin.com/in/afnan-badar/",
     // ...
   }
 };

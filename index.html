@@ -57,14 +57,22 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <!-- CTA Button in Header -->
-      <a href="#contact" class="nav-cta-btn">
-        <span>Let's Talk</span>
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
+      <!-- CTA Buttons in Header (LinkedIn + Let's Talk) -->
+      <div style="display: flex; align-items: center; gap: 0.65rem;">
+        <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="nav-cta-btn" style="border-color: rgba(10, 102, 194, 0.4); background: rgba(10, 102, 194, 0.15); color: #38bdf8;" title="Connect on LinkedIn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="#contact" class="nav-cta-btn">
+          <span>Let's Talk</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
 
       <!-- Mobile Hamburger Toggle -->
       <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
@@ -83,7 +91,8 @@
       <a href="#simulator" class="mobile-nav-link">Agent Simulation Terminal</a>
       <a href="#skills" class="mobile-nav-link">Technical Skills</a>
       <a href="#research" class="mobile-nav-link">Research & Academic</a>
-      <a href="#contact" class="mobile-nav-link">Get in Touch</a>
+      <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: #38bdf8;">LinkedIn Profile</a>
+      <a href="#contact" class="mobile-nav-link">Direct Message Me</a>
     </div>
   </nav>
 
@@ -132,10 +141,10 @@
         Architecting end-to-end artificial intelligence systems across the full compute stack — from ultra-low power edge machine learning triage and generative time-series modeling to speech-to-speech cross-lingual translation and autonomous multi-agent reasoning chains.
       </p>
 
-      <!-- Dual CTA Buttons -->
+      <!-- CTA Buttons Group (Get in Touch, Explore Projects, LinkedIn) -->
       <div class="hero-cta-group">
         <a href="#contact" class="btn-primary">
-          <span>Get in Touch</span>
+          <span>Direct Message Me</span>
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
@@ -148,13 +157,19 @@
             <polyline points="7 6 12 11 17 6"></polyline>
           </svg>
         </a>
+        <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color: rgba(10, 102, 194, 0.4); background: rgba(10, 102, 194, 0.15);">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
       </div>
 
       <!-- Live Telemetry Stats -->
       <div class="hero-telemetry">
         <div class="telemetry-card">
-          <span class="telemetry-val text-gradient-cyan">4+</span>
-          <span class="telemetry-lbl">Core AI Systems</span>
+          <span class="telemetry-val text-gradient-cyan">10+</span>
+          <span class="telemetry-lbl">Repositories Online</span>
         </div>
         <div class="telemetry-card">
           <span class="telemetry-val text-gradient-violet">&lt;0.02 mJ</span>
@@ -278,19 +293,19 @@
     <div class="container">
       <div class="section-header">
         <div class="section-tag">Applied ML & AI Systems</div>
-        <h2 class="section-title">Featured Engineering Projects</h2>
+        <h2 class="section-title">Engineering Projects Repository</h2>
         <p class="section-description">
-          Engineered repositories with rigorous evaluation benchmarks, reproducible pipelines, and interactive deployment suites.
+          All repositories are open-sourced on GitHub with reproducible workflows, empirical evaluation benchmarks, and deployment suites.
         </p>
       </div>
 
       <!-- Filter Tabs -->
       <div class="filter-tabs">
-        <button class="filter-tab-btn active" data-filter="all">All Systems</button>
-        <button class="filter-tab-btn" data-filter="edge-ai">Edge AI & Generative Modeling</button>
-        <button class="filter-tab-btn" data-filter="nlp">NLP & Speech AI</button>
-        <button class="filter-tab-btn" data-filter="vision">Computer Vision</button>
-        <button class="filter-tab-btn" data-filter="agentic-ai">Agentic AI & Orchestration</button>
+        <button class="filter-tab-btn active" data-filter="all">All Systems (10)</button>
+        <button class="filter-tab-btn" data-filter="edge-ai">Edge AI &amp; Generative (4)</button>
+        <button class="filter-tab-btn" data-filter="agentic-ai">Agentic AI &amp; LLMs (4)</button>
+        <button class="filter-tab-btn" data-filter="nlp">NLP &amp; Speech AI (1)</button>
+        <button class="filter-tab-btn" data-filter="vision">Computer Vision (1)</button>
       </div>
 
       <!-- Projects Grid -->
@@ -314,7 +329,6 @@
             Edge-optimized triage and synthetic data generation framework integrating Naive Bayes classification and Hidden Markov Models with TimeGAN augmentation for downstream drought-risk prediction under extreme data scarcity.
           </p>
 
-          <!-- Metrics Row -->
           <div class="project-metrics-row">
             <div class="metric-col">
               <span class="metric-col-val text-gradient-cyan">100%</span>
@@ -330,7 +344,6 @@
             </div>
           </div>
 
-          <!-- Tags -->
           <div class="project-tags">
             <span class="project-tag">Python</span>
             <span class="project-tag">HMM</span>
@@ -340,10 +353,8 @@
             <span class="project-tag">PyTorch</span>
           </div>
 
-          <!-- Actions -->
           <div class="project-card-actions">
             <div class="card-action-links">
-              <!-- SVG GitHub Icon -->
               <a href="https://github.com/afnanmengal/EcoGenAI" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
@@ -381,7 +392,6 @@
             End-to-end speech-to-speech natural language translation engine bridging Balochi and English with custom acoustic and sequence models for low-resource dialect preservation.
           </p>
 
-          <!-- Metrics Row -->
           <div class="project-metrics-row">
             <div class="metric-col">
               <span class="metric-col-val text-gradient-violet">Balochi ⇄ En</span>
@@ -397,7 +407,6 @@
             </div>
           </div>
 
-          <!-- Tags -->
           <div class="project-tags">
             <span class="project-tag">PyTorch</span>
             <span class="project-tag">Speech-to-Speech</span>
@@ -406,10 +415,8 @@
             <span class="project-tag">Transformers</span>
           </div>
 
-          <!-- Actions -->
           <div class="project-card-actions">
             <div class="card-action-links">
-              <!-- SVG GitHub Icon -->
               <a href="https://github.com/afnanmengal/neurolingo" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
@@ -429,7 +436,69 @@
           </div>
         </article>
 
-        <!-- 3. Plant Disease Classifier -->
+        <!-- 3. Autonomous Agent Workflows -->
+        <article class="project-card accent-cyan" data-category="agentic-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-cyan">Agentic AI &amp; LLMs</span>
+            <button class="btn-view-details" data-project="autonomous-agents" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Autonomous Agent Workflows</h3>
+          <p class="project-card-description">
+            Multi-agent reasoning chains and context-aware tool orchestration using LangChain, LangGraph, Model Context Protocol (MCP), and local LLMs for self-correcting plan-and-solve execution trajectories.
+          </p>
+
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">LangGraph</span>
+              <span class="metric-col-lbl">State Graph</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">MCP</span>
+              <span class="metric-col-lbl">Tool Protocol</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">Chroma</span>
+              <span class="metric-col-lbl">Vector Memory</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">LangGraph</span>
+            <span class="project-tag">LangChain</span>
+            <span class="project-tag">Vector DB</span>
+            <span class="project-tag">MCP</span>
+            <span class="project-tag">Autonomous Agents</span>
+          </div>
+
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <a href="https://github.com/afnanmengal/customer_support_agent" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/customer_support_agent#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="autonomous-agents">Specs</button>
+          </div>
+        </article>
+
+        <!-- 4. Plant Disease Classifier -->
         <article class="project-card accent-emerald" data-category="vision">
           <div class="project-card-header">
             <span class="project-badge-tag badge-emerald">Computer Vision</span>
@@ -447,7 +516,6 @@
             Deep learning diagnostic tool classifying agricultural leaf pathologies under constrained, low-quality image conditions with real-time Grad-CAM lesion explainability and Streamlit desktop integration.
           </p>
 
-          <!-- Metrics Row -->
           <div class="project-metrics-row">
             <div class="metric-col">
               <span class="metric-col-val text-gradient-emerald">98.4%</span>
@@ -463,7 +531,6 @@
             </div>
           </div>
 
-          <!-- Tags -->
           <div class="project-tags">
             <span class="project-tag">Computer Vision</span>
             <span class="project-tag">Streamlit</span>
@@ -472,10 +539,8 @@
             <span class="project-tag">Grad-CAM</span>
           </div>
 
-          <!-- Actions -->
           <div class="project-card-actions">
             <div class="card-action-links">
-              <!-- SVG GitHub Icon -->
               <a href="https://github.com/afnanmengal/plant-disease-classifier" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
@@ -495,11 +560,11 @@
           </div>
         </article>
 
-        <!-- 4. Autonomous Agent Workflows -->
+        <!-- 5. Afnan's AI: Autonomous Neural Assistant -->
         <article class="project-card accent-cyan" data-category="agentic-ai">
           <div class="project-card-header">
-            <span class="project-badge-tag badge-cyan">Agentic AI &amp; LLMs</span>
-            <button class="btn-view-details" data-project="autonomous-agents" title="View In-Depth Architecture">
+            <span class="project-badge-tag badge-cyan">Agentic AI &amp; Local LLMs</span>
+            <button class="btn-view-details" data-project="ai-helper-chatbot" title="View In-Depth Architecture">
               Details
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -508,47 +573,44 @@
             </button>
           </div>
 
-          <h3 class="project-card-title">Autonomous Agent Workflows</h3>
+          <h3 class="project-card-title">Afnan's AI: Autonomous Neural Assistant</h3>
           <p class="project-card-description">
-            Multi-agent reasoning chains and context-aware tool orchestration using LangChain, LangGraph, Model Context Protocol (MCP), and vector databases for self-correcting plan-and-solve execution trajectories.
+            Futuristic desktop and web neural assistant with adaptive compute engine (GPU CUDA / CPU fallback), local Ollama LLM integration, custom system persona management, and streaming token generation.
           </p>
 
-          <!-- Metrics Row -->
           <div class="project-metrics-row">
             <div class="metric-col">
-              <span class="metric-col-val text-gradient-cyan">LangGraph</span>
-              <span class="metric-col-lbl">State Graph</span>
+              <span class="metric-col-val text-gradient-cyan">GPU CUDA</span>
+              <span class="metric-col-lbl">Adaptive Engine</span>
             </div>
             <div class="metric-col">
-              <span class="metric-col-val text-gradient-cyan">MCP</span>
-              <span class="metric-col-lbl">Tool Protocol</span>
+              <span class="metric-col-val text-gradient-cyan">PyQt6 + Web</span>
+              <span class="metric-col-lbl">Dual GUI</span>
             </div>
             <div class="metric-col">
-              <span class="metric-col-val text-gradient-cyan">Chroma</span>
-              <span class="metric-col-lbl">Vector Memory</span>
+              <span class="metric-col-val text-gradient-cyan">100% Local</span>
+              <span class="metric-col-lbl">Zero Privacy Leak</span>
             </div>
           </div>
 
-          <!-- Tags -->
           <div class="project-tags">
-            <span class="project-tag">LangGraph</span>
-            <span class="project-tag">LangChain</span>
-            <span class="project-tag">Vector DB</span>
-            <span class="project-tag">MCP</span>
-            <span class="project-tag">Autonomous Agents</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PyQt6</span>
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">Ollama</span>
+            <span class="project-tag">Local LLMs</span>
+            <span class="project-tag">GPU Monitoring</span>
           </div>
 
-          <!-- Actions -->
           <div class="project-card-actions">
             <div class="card-action-links">
-              <!-- SVG GitHub Icon -->
-              <a href="https://github.com/afnanmengal/customer_support_agent" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+              <a href="https://github.com/afnanmengal/ai-helper-chatbot" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
                 <span>GitHub Repo</span>
               </a>
-              <a href="https://github.com/afnanmengal/customer_support_agent#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+              <a href="https://github.com/afnanmengal/ai-helper-chatbot#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
                 <span>Demo Link</span>
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -557,7 +619,318 @@
                 </svg>
               </a>
             </div>
-            <button class="btn-view-details" data-project="autonomous-agents">Specs</button>
+            <button class="btn-view-details" data-project="ai-helper-chatbot">Specs</button>
+          </div>
+        </article>
+
+        <!-- 6. GPU Vibration & Bearing Demodulator -->
+        <article class="project-card accent-emerald" data-category="edge-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-emerald">Signal DSP &amp; Edge AI</span>
+            <button class="btn-view-details" data-project="vibration-analyzer" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Vibration Analyzer</h3>
+          <p class="project-card-description">
+            Industrial workstation application for real-time mechanical vibration analysis, high-frequency resonance technique (HFRT) bearing demodulation, and predictive machine health monitoring with ISO 10816-3 severity alerts.
+          </p>
+
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">48 kHz</span>
+              <span class="metric-col-lbl">Sampling Rate</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">HFRT / Hilbert</span>
+              <span class="metric-col-lbl">Demodulation</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">CuPy / PyTorch</span>
+              <span class="metric-col-lbl">GPU Compute</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PyQt6</span>
+            <span class="project-tag">PyTorch/CuPy</span>
+            <span class="project-tag">DSP</span>
+            <span class="project-tag">PortAudio</span>
+            <span class="project-tag">Predictive Maintenance</span>
+          </div>
+
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <a href="https://github.com/afnanmengal/vibration-analyzer" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/vibration-analyzer#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="vibration-analyzer">Specs</button>
+          </div>
+        </article>
+
+        <!-- 7. Cost-Sensitive Credit Risk Classification -->
+        <article class="project-card accent-violet" data-category="edge-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-violet">Applied ML &amp; Economics</span>
+            <button class="btn-view-details" data-project="credit-risk" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Credit Risk Classification</h3>
+          <p class="project-card-description">
+            Default risk classification with explicit business cost-matrix optimization, Precision-Recall threshold tuning, and SHAP explainability under severe class imbalance.
+          </p>
+
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">Cost Matrix</span>
+              <span class="metric-col-lbl">Optimization</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">PR-AUC</span>
+              <span class="metric-col-lbl">Threshold Tuning</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">SHAP</span>
+              <span class="metric-col-lbl">Explainability</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">Scikit-Learn</span>
+            <span class="project-tag">SHAP</span>
+            <span class="project-tag">Imbalanced Data</span>
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">Cost-Sensitive ML</span>
+          </div>
+
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <a href="https://github.com/afnanmengal/credit-risk-classification" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/credit-risk-classification#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="credit-risk">Specs</button>
+          </div>
+        </article>
+
+        <!-- 8. Clinical Diagnostic Expert System -->
+        <article class="project-card accent-cyan" data-category="agentic-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-cyan">Knowledge Engineering</span>
+            <button class="btn-view-details" data-project="medical-expert-system" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Medical Expert System</h3>
+          <p class="project-card-description">
+            Clinical rule-based diagnostic engine using propositional and first-order logic with certainty factor calculations for differential disease triage and reasoning audits.
+          </p>
+
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">First-Order</span>
+              <span class="metric-col-lbl">Logic Engine</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">Certainty</span>
+              <span class="metric-col-lbl">Factors / Prob</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-cyan">MongoDB</span>
+              <span class="metric-col-lbl">Knowledge Base</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">Expert Systems</span>
+            <span class="project-tag">Logic Engine</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <a href="https://github.com/afnanmengal/medical-expert-system" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/medical-expert-system#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="medical-expert-system">Specs</button>
+          </div>
+        </article>
+
+        <!-- 9. Interactive Tabular EDA Dashboard -->
+        <article class="project-card accent-emerald" data-category="edge-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-emerald">Data Engineering</span>
+            <button class="btn-view-details" data-project="interactive-eda" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Interactive EDA Dashboard</h3>
+          <p class="project-card-description">
+            Multipage tabular data analysis suite with dynamic Plotly cross-filtering, statistical distribution inspections, missingness audits, and automated CSV/Parquet summary exports.
+          </p>
+
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">Multipage</span>
+              <span class="metric-col-lbl">Streamlit</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">Plotly Express</span>
+              <span class="metric-col-lbl">Interactive Charts</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-emerald">CSV / Parquet</span>
+              <span class="metric-col-lbl">Data Ingestion</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">Plotly</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Interactive EDA</span>
+            <span class="project-tag">Python</span>
+          </div>
+
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <a href="https://github.com/afnanmengal/interactive-eda-dashboard" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/interactive-eda-dashboard#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="interactive-eda">Specs</button>
+          </div>
+        </article>
+
+        <!-- 10. Motorcycle Fault Diagnostic Expert System -->
+        <article class="project-card accent-violet" data-category="agentic-ai">
+          <div class="project-card-header">
+            <span class="project-badge-tag badge-violet">Knowledge Engineering</span>
+            <button class="btn-view-details" data-project="bike-expert-system" title="View In-Depth Architecture">
+              Details
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="project-card-title">Bike Expert System</h3>
+          <p class="project-card-description">
+            Automated mechanical troubleshooting engine combining propositional forward-chaining and MongoDB persistence for vehicular diagnostics and component repair guidance.
+          </p>
+
+          <div class="project-metrics-row">
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">Forward Chaining</span>
+              <span class="metric-col-lbl">Inference</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">MongoDB</span>
+              <span class="metric-col-lbl">Persistence</span>
+            </div>
+            <div class="metric-col">
+              <span class="metric-col-val text-gradient-violet">Streamlit</span>
+              <span class="metric-col-lbl">GUI Suite</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">Expert Systems</span>
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">Automotive</span>
+          </div>
+
+          <div class="project-card-actions">
+            <div class="card-action-links">
+              <a href="https://github.com/afnanmengal/bike-expert-system" target="_blank" rel="noopener noreferrer" class="project-link-btn github">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repo</span>
+              </a>
+              <a href="https://github.com/afnanmengal/bike-expert-system#demo" target="_blank" rel="noopener noreferrer" class="project-link-btn demo">
+                <span>Demo Link</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-view-details" data-project="bike-expert-system">Specs</button>
           </div>
         </article>
 
@@ -641,7 +1014,7 @@
           <div class="skill-cat-header">
             <div class="skill-cat-icon" style="background: var(--cyan-dim); color: var(--cyan-primary); border: 1px solid var(--cyan-border);">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="10" r="10"></circle>
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                 <path d="M2 12h20"></path>
               </svg>
@@ -837,10 +1210,10 @@
 
       <div class="contact-grid">
 
-        <!-- Left Stack: Direct WhatsApp & Credentials Cards -->
+        <!-- Left Stack: Direct WhatsApp & LinkedIn Cards -->
         <div class="contact-cards-stack">
 
-          <!-- WhatsApp Primary Card -->
+          <!-- WhatsApp Direct Card (NO raw number shown in CTA) -->
           <div class="whatsapp-cta-card">
             <div class="whatsapp-card-content">
               <div class="whatsapp-big-icon">
@@ -850,8 +1223,8 @@
                 </svg>
               </div>
               <div class="whatsapp-card-text">
-                <h3>Direct WhatsApp Link</h3>
-                <p>Connect instantly with Engr. Afnan Badar for quick technical inquiries, project consults, or direct messages.</p>
+                <h3>Direct Message</h3>
+                <p>Connect instantly with Engr. Afnan Badar for quick technical consultations, project inquiries, or direct collaboration.</p>
               </div>
             </div>
 
@@ -864,13 +1237,54 @@
                 <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.98-.277-.1-.478-.15-.68.15-.201.301-.78 0.98-.956 1.18-.175.2-.352.226-.653.076-.301-.15-1.272-.469-2.424-1.496-.896-.799-1.501-1.787-1.677-2.088-.175-.301-.019-.464.132-.614.136-.135.301-.352.452-.528.15-.176.201-.301.302-.502.1-.2.05-.377-.025-.528-.075-.15-.68-1.637-.93-2.24-.244-.588-.492-.508-.68-.518-.176-.01-.377-.01-.578-.01-.2 0-.528.075-.804.377-.276.301-1.055 1.03-1.055 2.511s1.08 2.912 1.231 3.113c.15.2 2.126 3.246 5.15 4.553.72.311 1.282.497 1.72.636.723.23 1.381.197 1.901.12.58-.087 1.78-.727 2.03-1.43.251-.703.251-1.306.176-1.43-.075-.125-.276-.201-.577-.351z"/>
                 <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
               </svg>
-              <span>Chat on WhatsApp (+92 311 8327516)</span>
+              <span>Direct Message Me</span>
+            </a>
+          </div>
+
+          <!-- LinkedIn Primary Card -->
+          <div class="linkedin-cta-card">
+            <div class="whatsapp-card-content">
+              <div class="linkedin-big-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="whatsapp-card-text">
+                <h3>LinkedIn Network</h3>
+                <p>Connect with Engr. Afnan Badar on LinkedIn for professional background, endorsements, and career opportunities.</p>
+              </div>
+            </div>
+
+            <a href="https://www.linkedin.com/in/afnan-badar/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-linkedin-direct">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>Connect on LinkedIn</span>
             </a>
           </div>
 
           <!-- Professional Links Card -->
           <div class="contact-info-card">
-            <!-- WhatsApp / Phone -->
+            <!-- LinkedIn -->
+            <div class="contact-item-row">
+              <div class="contact-item-left">
+                <div class="contact-item-icon" style="color: #0a66c2;">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">LinkedIn Profile</div>
+                  <div class="contact-item-val">linkedin.com/in/afnan-badar</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="btn-mini-action">Connect</a>
+            </div>
+
+            <!-- Instant Messaging -->
             <div class="contact-item-row">
               <div class="contact-item-left">
                 <div class="contact-item-icon" style="color: #25D366;">
@@ -879,8 +1293,8 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="contact-item-label">WhatsApp / Phone</div>
-                  <div class="contact-item-val">+92 311 8327516</div>
+                  <div class="contact-item-label">Instant Messaging</div>
+                  <div class="contact-item-val">Direct WhatsApp</div>
                 </div>
               </div>
               <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="btn-mini-action">Message</a>
@@ -979,7 +1393,7 @@
   </section>
 
   <!-- ==========================================================================
-       Floating High-Visibility WhatsApp Button
+       Floating High-Visibility Direct WhatsApp Button (NO number shown in CTA)
        ========================================================================== -->
   <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" 
      id="floating-whatsapp-btn" 
@@ -991,7 +1405,7 @@
       <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.98-.277-.1-.478-.15-.68.15-.201.301-.78 0.98-.956 1.18-.175.2-.352.226-.653.076-.301-.15-1.272-.469-2.424-1.496-.896-.799-1.501-1.787-1.677-2.088-.175-.301-.019-.464.132-.614.136-.135.301-.352.452-.528.15-.176.201-.301.302-.502.1-.2.05-.377-.025-.528-.075-.15-.68-1.637-.93-2.24-.244-.588-.492-.508-.68-.518-.176-.01-.377-.01-.578-.01-.2 0-.528.075-.804.377-.276.301-1.055 1.03-1.055 2.511s1.08 2.912 1.231 3.113c.15.2 2.126 3.246 5.15 4.553.72.311 1.282.497 1.72.636.723.23 1.381.197 1.901.12.58-.087 1.78-.727 2.03-1.43.251-.703.251-1.306.176-1.43-.075-.125-.276-.201-.577-.351z"/>
       <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
     </svg>
-    <span class="floating-whatsapp-text">Chat on WhatsApp</span>
+    <span class="floating-whatsapp-text">Direct Message Me</span>
   </a>
 
   <!-- ==========================================================================
@@ -1051,19 +1465,25 @@
       </div>
 
       <div class="footer-social-links">
-        <a href="https://github.com/afnanmengal" target="_blank" rel="noopener noreferrer" class="social-link">
+        <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="social-link" title="Connect on LinkedIn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/afnanmengal" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Repositories">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
           </svg>
           <span>GitHub</span>
         </a>
-        <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="social-link">
+        <a href="https://wa.me/923118327516?text=Hi%20Engr.%20Afnan,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="social-link" title="Direct WhatsApp">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
             <path d="M12 0a12 12 0 0 0-10.428 17.935L0 24l6.237-1.636A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.923c-1.896 0-3.676-.52-5.212-1.425l-.374-.22-3.87 1.015 1.033-3.77-.242-.387A9.917 9.917 0 0 1 2.077 12C2.077 6.529 6.529 2.077 12 2.077 17.471 2.077 21.923 6.529 21.923 12c0 5.471-4.452 9.923-9.923 9.923z"/>
           </svg>
-          <span>WhatsApp</span>
+          <span>Direct Message</span>
         </a>
-        <button class="social-link copy-email-btn" style="background: none; border: none; cursor: pointer; font-family: inherit;">
+        <button class="social-link copy-email-btn" style="background: none; border: none; cursor: pointer; font-family: inherit;" title="Copy email address">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
