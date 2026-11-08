@@ -20,13 +20,13 @@ const PORTFOLIO_CONFIG = {
       {
         degree: "MS Artificial Intelligence",
         institution: "University of Engineering and Technology (UET) Lahore",
-        period: "2024 – Present",
+        period: "2026 – 2028",
         focus: "Time-Series Generative Modeling (TimeGAN), Low-Resource NLP & Edge AI"
       },
       {
         degree: "BS Computer Engineering",
         institution: "Balochistan University of Information Technology, Engineering & Management Sciences (BUITEMS)",
-        period: "Graduated with Honors",
+        period: "2022 – 2026",
         focus: "Embedded Systems, Signal Processing, Computer Architecture & Edge Computing"
       }
     ]
