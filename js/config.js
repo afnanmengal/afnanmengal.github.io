@@ -107,7 +107,7 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "vibration-analyzer",
-      title: "GPU Real-Time Mechanical Vibration & Bearing Demodulator",
+      title: "Mechanical Vibration Analyzer: GPU HFRT & Demodulation",
       category: "edge-ai",
       categoryLabel: "Signal DSP & Edge Computing",
       description: "Industrial workstation application for real-time vibration analysis, high-frequency resonance technique (HFRT) bearing demodulation, and predictive machine health monitoring.",

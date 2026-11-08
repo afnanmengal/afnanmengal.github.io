@@ -39,7 +39,7 @@ A futuristic, high-performance personal portfolio website engineered for **Engr.
    - **Autonomous Agent Workflows:** Multi-agent reasoning chains and context-aware tool orchestration using LangChain, LangGraph, Model Context Protocol (MCP), and local LLMs.
    - **Plant Disease Classifier:** Deep learning diagnostic tool classifying agricultural leaf pathologies under constrained, low-quality image conditions.
    - **Afnan's AI:** Futuristic autonomous neural assistant with adaptive hardware acceleration (GPU CUDA / CPU fallback) and multi-turn reasoning.
-   - **Vibration Analyzer:** GPU-accelerated mechanical vibration analysis, HFRT bearing demodulation, and predictive machine health monitoring.
+   - **Mechanical Vibration Analyzer:** GPU-accelerated mechanical vibration analysis, HFRT bearing demodulation, and predictive machine health monitoring.
    - **Interactive Modal:** Click "Specs" or "Details" on any card to view deep architectural breakdowns and benchmarks.
 
 6. **Live Autonomous Agent Reasoning Sandbox / Terminal:**
