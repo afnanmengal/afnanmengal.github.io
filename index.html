@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engr. Afnan Badar | AI Engineer & Computer Engineer</title>
+  <title>Engr. Afnan Badar | AI Engineer & Autonomous Systems Consultant</title>
+
+  <!-- Prevent Theme Flash -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('portfolio-theme') || 'light';
+        document.documentElement.setAttribute('data-theme', saved);
+      } catch (e) {}
+    })();
+  </script>
   
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Portfolio of Engr. Afnan Badar - AI Engineer and Computer Engineer specializing in Deep Learning, NLP, Time-Series Generative Modeling, and Autonomous Agentic AI Workflows.">
-  <meta name="keywords" content="Afnan Badar, AI Engineer, Computer Engineer, Deep Learning, NLP, Agentic AI, LangGraph, PyTorch, TimeGAN, Speech to Speech, Computer Vision">
+  <meta name="description" content="Executive portfolio of Engr. Afnan Badar - AI Engineer and Autonomous Systems Consultant specializing in Enterprise Multi-Agent Workflows, Speech-to-Speech Translation, Industrial DSP Predictive Maintenance, and Edge AI.">
+  <meta name="keywords" content="Afnan Badar, AI Engineer, AI Consultant, Deep Learning, Autonomous Agents, LangGraph, PyTorch, Speech to Speech, Computer Vision, Signal DSP">
   <meta name="author" content="Engr. Afnan Badar">
   
-  <meta property="og:title" content="Engr. Afnan Badar | AI Engineer & Computer Engineer">
-  <meta property="og:description" content="Specializing in Deep Learning, NLP, and Autonomous Agentic AI Workflows.">
+  <meta property="og:title" content="Engr. Afnan Badar | AI Engineer & Autonomous Systems Consultant">
+  <meta property="og:description" content="Engineering Enterprise AI Workflows, Deep Learning & Predictive Engineering Systems.">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
@@ -23,7 +33,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0f19'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='42' fill='%2300f2fe'>AB</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230284c7'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='42' fill='%23ffffff'>AB</text></svg>">
 </head>
 <body>
 
@@ -43,13 +53,14 @@
         <div class="nav-logo-badge">AB</div>
         <div>
           <span class="nav-brand-text">Engr. Afnan Badar</span>
-          <span class="nav-brand-sub">AI & Computer Engineer</span>
+          <span class="nav-brand-sub">AI & Autonomous Systems Consultant</span>
         </div>
       </a>
 
       <!-- Navigation Links -->
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#simulator" class="nav-link">Agent Terminal</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -57,9 +68,29 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <!-- CTA Buttons in Header (LinkedIn + Let's Talk) -->
+      <!-- CTA Buttons & Theme Toggle in Header -->
       <div style="display: flex; align-items: center; gap: 0.65rem;">
-        <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="nav-cta-btn" style="border-color: rgba(10, 102, 194, 0.4); background: rgba(10, 102, 194, 0.15); color: #38bdf8;" title="Connect on LinkedIn">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch Theme" title="Toggle Light / Dark Mode">
+          <!-- Sun Icon (shown in dark theme) -->
+          <svg class="theme-icon-sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light theme) -->
+          <svg class="theme-icon-moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="nav-cta-btn" style="border-color: rgba(10, 102, 194, 0.35); background: rgba(10, 102, 194, 0.08); color: #0284c7;" title="Connect on LinkedIn">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
           </svg>
@@ -86,13 +117,31 @@
 
     <!-- Mobile Drawer Menu -->
     <div class="mobile-drawer" id="mobile-drawer">
-      <a href="#about" class="mobile-nav-link">About & Philosophy</a>
+      <a href="#about" class="mobile-nav-link">About &amp; Philosophy</a>
+      <a href="#services" class="mobile-nav-link">Client Solutions</a>
       <a href="#projects" class="mobile-nav-link">Featured Projects</a>
       <a href="#simulator" class="mobile-nav-link">Agent Simulation Terminal</a>
       <a href="#skills" class="mobile-nav-link">Technical Skills</a>
-      <a href="#research" class="mobile-nav-link">Research & Academic</a>
-      <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: #38bdf8;">LinkedIn Profile</a>
+      <a href="#research" class="mobile-nav-link">Research &amp; Academic</a>
+      <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: #0284c7;">LinkedIn Profile</a>
       <a href="#contact" class="mobile-nav-link">Direct Message Me</a>
+      <button class="theme-toggle-btn" id="mobile-theme-toggle-btn" style="margin-top: 0.5rem; width: 100%; height: 42px; border-radius: 10px; gap: 0.5rem;" aria-label="Switch Theme">
+        <svg class="theme-icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <span style="font-size: 0.88rem; font-weight: 600;">Switch Light / Dark Theme</span>
+      </button>
     </div>
   </nav>
 
@@ -107,7 +156,7 @@
       <!-- Live Status Badge -->
       <div class="status-pill">
         <span class="status-pulse"></span>
-        <span>Available for AI Engineering & Autonomous Systems Roles</span>
+        <span>Available for Enterprise AI Solutions &amp; Engineering Contracts</span>
       </div>
 
       <!-- Headline -->
@@ -117,7 +166,7 @@
 
       <!-- Dynamic Sub-headline with Live Typing Effect -->
       <div class="hero-subtitle-container">
-        <span class="hero-subtitle text-gradient-dual" id="dynamic-headline">AI Engineer & Computer Engineer</span><span class="typing-cursor">|</span>
+        <span class="hero-subtitle text-gradient-dual" id="dynamic-headline">AI Engineer &amp; Autonomous Systems Consultant</span><span class="typing-cursor">|</span>
       </div>
 
       <!-- Quick Academic Badges -->
@@ -138,7 +187,7 @@
       </div>
 
       <p class="hero-summary">
-        Architecting end-to-end artificial intelligence systems across the full compute stack — from ultra-low power edge machine learning triage and generative time-series modeling to speech-to-speech cross-lingual translation and autonomous multi-agent reasoning chains.
+        Architecting enterprise artificial intelligence solutions across the full compute stack — from autonomous multi-agent reasoning chains and speech-to-speech translation engines to industrial predictive maintenance and edge machine learning.
       </p>
 
       <!-- CTA Buttons Group (Get in Touch, Explore Projects, LinkedIn) -->
@@ -157,7 +206,7 @@
             <polyline points="7 6 12 11 17 6"></polyline>
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color: rgba(10, 102, 194, 0.4); background: rgba(10, 102, 194, 0.15);">
+        <a href="https://www.linkedin.com/in/afnan-badar/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color: rgba(10, 102, 194, 0.35); background: rgba(10, 102, 194, 0.08);">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
           </svg>
@@ -280,6 +329,131 @@
                 <div class="arch-layer-desc">Low-power Naive Bayes gates (&lt;0.02 mJ), MCU signal DSP, zero-leakage splits.</div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Client Solutions & Business AI Services Section
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <span>Executive Solutions</span>
+        </div>
+        <h2 class="section-title">Client Solutions &amp; AI Capabilities</h2>
+        <p class="section-description">
+          Architecting robust, deterministic, and privacy-preserving artificial intelligence pipelines for enterprise automation, industrial diagnostics, and production workflows.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Autonomous Agent Architectures -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="service-title">Autonomous Agent Architectures</h3>
+              <div class="service-tagline">LangGraph, MCP &amp; Multi-Agent Tool Chains</div>
+            </div>
+          </div>
+          <p class="service-desc">
+            Engineering self-correcting plan-and-solve agent state graphs, dynamic tool dispatch via Model Context Protocol (MCP), and local zero-leakage LLM runtime execution for enterprise process automation.
+          </p>
+          <div class="service-metrics-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Sub-second tool dispatch &bull; Self-correcting &bull; 100% private</span>
+          </div>
+        </div>
+
+        <!-- Service 2: Deep Learning & Speech AI -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon violet">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="service-title">Deep Learning &amp; Speech AI</h3>
+              <div class="service-tagline">Speech-to-Speech &amp; Neural Sequence Models</div>
+            </div>
+          </div>
+          <p class="service-desc">
+            Architecting end-to-end cross-lingual speech translation systems (Neurolingo), acoustic Conformer alignments, low-resource NLP tokenizers, and high-fidelity HiFi-GAN vocoding pipelines.
+          </p>
+          <div class="service-metrics-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Cross-lingual alignment &bull; &lt;40ms vocoder latency</span>
+          </div>
+        </div>
+
+        <!-- Service 3: Computer Vision & Edge Diagnostics -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3 class="service-title">Computer Vision &amp; Edge Diagnostics</h3>
+              <div class="service-tagline">Diagnostic CNNs &amp; Real-Time Localization</div>
+            </div>
+          </div>
+          <p class="service-desc">
+            Developing robust computer vision models optimized for noisy, real-world field conditions with explainable Grad-CAM heatmaps, lightweight Streamlit web interfaces, and desktop deployment suites.
+          </p>
+          <div class="service-metrics-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>98.4% diagnostic accuracy &bull; &lt;45ms inference</span>
+          </div>
+        </div>
+
+        <!-- Service 4: Predictive Maintenance & Signal DSP -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon emerald">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="service-title">Predictive Maintenance &amp; Signal DSP</h3>
+              <div class="service-tagline">Industrial GPU Vibration &amp; Fault Detection</div>
+            </div>
+          </div>
+          <p class="service-desc">
+            High-frequency resonance technique (HFRT) bearing demodulation, real-time PortAudio continuous telemetry streaming, and automated ISO 10816-3 machinery health vibration classification.
+          </p>
+          <div class="service-metrics-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>48 kHz sampling &bull; Envelope Hilbert transform</span>
           </div>
         </div>
       </div>
@@ -1092,7 +1266,7 @@
               <div class="timeline-degree">Master of Science in Artificial Intelligence</div>
               <div class="timeline-inst">University of Engineering and Technology (UET) Lahore</div>
             </div>
-            <span class="timeline-period">2024 – Present &bull; Roll No: 2026-MS-AI-120</span>
+            <span class="timeline-period">Graduate Research &bull; 2024 – Present</span>
           </div>
 
           <p class="timeline-desc">

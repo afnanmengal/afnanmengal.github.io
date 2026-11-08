@@ -6,21 +6,21 @@
 const PORTFOLIO_CONFIG = {
   personal: {
     name: "Engr. Afnan Badar",
-    title: "AI Engineer & Computer Engineer",
-    subheadline: "Deep Learning, NLP & Autonomous AI Systems",
-    statusBadge: "Available for AI Engineering & Autonomous Systems Roles",
+    title: "AI Engineer & Autonomous Systems Consultant",
+    subheadline: "Enterprise AI Workflows, Deep Learning & Predictive Engineering",
+    statusBadge: "Available for Enterprise AI Solutions & Engineering Contracts",
     location: "Lahore / Quetta, Pakistan",
     email: "afnanmengal@gmail.com",
     phoneDisplay: "+92 311 8327516",
     whatsappNumber: "923118327516",
-    whatsappMessage: "Hi Engr. Afnan, I saw your portfolio and would like to connect!",
+    whatsappMessage: "Hi Engr. Afnan, I saw your portfolio and would like to discuss an AI project!",
     github: "https://github.com/afnanmengal",
     linkedin: "https://www.linkedin.com/in/afnan-badar/",
     degrees: [
       {
         degree: "MS Artificial Intelligence",
         institution: "University of Engineering and Technology (UET) Lahore",
-        period: "2024 - Present (Roll No: 2026-MS-AI-120)",
+        period: "2024 – Present",
         focus: "Time-Series Generative Modeling (TimeGAN), Low-Resource NLP & Edge AI"
       },
       {
@@ -31,6 +31,33 @@ const PORTFOLIO_CONFIG = {
       }
     ]
   },
+
+  services: [
+    {
+      title: "Autonomous Agent Architectures",
+      tagline: "LangGraph, MCP & Multi-Agent Chains",
+      description: "Engineering self-correcting plan-and-solve agent state graphs, dynamic tool dispatch via Model Context Protocol (MCP), and local zero-leakage LLM runtime execution for enterprise process automation.",
+      metrics: "Sub-second dispatch &bull; Self-correcting &bull; 100% private"
+    },
+    {
+      title: "Deep Learning & Speech AI",
+      tagline: "Speech-to-Speech & Neural Sequence Models",
+      description: "Architecting end-to-end cross-lingual speech translation systems (Neurolingo), acoustic Conformer alignments, low-resource NLP tokenizers, and high-fidelity HiFi-GAN vocoding pipelines.",
+      metrics: "Cross-lingual alignment &bull; <40ms vocoder latency"
+    },
+    {
+      title: "Computer Vision & Edge Diagnostics",
+      tagline: "Diagnostic CNNs & Real-Time Localization",
+      description: "Developing robust computer vision models optimized for noisy, real-world field conditions with explainable Grad-CAM heatmaps, lightweight Streamlit web interfaces, and desktop deployment suites.",
+      metrics: "98.4% diagnostic accuracy &bull; <45ms inference"
+    },
+    {
+      title: "Predictive Maintenance & Signal DSP",
+      tagline: "Industrial GPU Vibration & Fault Detection",
+      description: "High-frequency resonance technique (HFRT) bearing demodulation, real-time PortAudio continuous telemetry streaming, and automated ISO 10816-3 machinery health vibration classification.",
+      metrics: "48 kHz sampling &bull; Envelope Hilbert transform"
+    }
+  ],
 
   projects: [
     {

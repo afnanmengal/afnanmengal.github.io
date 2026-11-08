@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initNavbar();
   initDynamicText();
   initScrollSpy();
@@ -16,6 +17,52 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
+   0. Executive Theme Toggle & Persistence (Default: Light Business Theme)
+   ========================================================================== */
+function initThemeToggle() {
+  const toggleBtn = document.getElementById('theme-toggle-btn');
+  const mobileToggleBtn = document.getElementById('mobile-theme-toggle-btn');
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('portfolio-theme', theme);
+    } catch (e) {
+      // LocalStorage access fallback
+    }
+
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to Business Light Mode' : 'Switch to Midnight Dark Mode');
+    }
+    if (mobileToggleBtn) {
+      mobileToggleBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to Business Light Mode' : 'Switch to Midnight Dark Mode');
+    }
+
+    // Trigger canvas palette refresh if instantiated
+    if (window.neuralCanvas && typeof window.neuralCanvas.updateThemeColors === 'function') {
+      window.neuralCanvas.updateThemeColors();
+    }
+  }
+
+  // Default to light business theme unless explicitly set to dark
+  const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+  applyTheme(savedTheme);
+
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(targetTheme);
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', toggleTheme);
+  }
+  if (mobileToggleBtn) {
+    mobileToggleBtn.addEventListener('click', toggleTheme);
+  }
+}
+
+/* ==========================================================================
    1. Dynamic Typing Effect for Hero Sub-headline
    ========================================================================== */
 function initDynamicText() {
@@ -23,11 +70,11 @@ function initDynamicText() {
   if (!dynamicElement) return;
 
   const roles = [
-    "AI Engineer & Computer Engineer",
-    "Deep Learning, NLP & Autonomous AI Systems",
-    "Time-Series Generative Modeling (TimeGAN)",
-    "Speech-to-Speech Neural Translation",
-    "Multi-Agent Chains & Tool Orchestration (LangGraph & MCP)"
+    "AI Engineer & Autonomous Systems Consultant",
+    "Enterprise AI Workflows & Multi-Agent Orchestration",
+    "Speech-to-Speech Neural Translation (Neurolingo)",
+    "Industrial Signal DSP & Predictive Maintenance Systems",
+    "Diagnostic Computer Vision & Edge AI Deployment"
   ];
 
   let roleIndex = 0;

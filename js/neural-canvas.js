@@ -33,19 +33,58 @@ class NeuralCanvas {
       radius: 180
     };
 
-    // Color definitions
-    this.colors = {
-      cyan: { r: 6, g: 182, b: 212 },      // #06b6d4
-      violet: { r: 168, g: 85, b: 247 },   // #a855f7
-      emerald: { r: 16, g: 185, b: 129 },  // #10b981
-      blue: { r: 59, g: 130, b: 246 }      // #3b82f6
-    };
+    // Initial theme color definitions
+    this.updateThemeColors();
 
     this.animationFrameId = null;
     this.isPaused = false;
     this.lastTime = 0;
 
+    window.neuralCanvas = this;
+
+    // Observe data-theme changes on <html>
+    if (typeof MutationObserver !== 'undefined') {
+      const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+            this.updateThemeColors();
+          }
+        }
+      });
+      observer.observe(document.documentElement, { attributes: true });
+    }
+
     this.init();
+  }
+
+  updateThemeColors() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      this.colors = {
+        cyan: { r: 6, g: 182, b: 212 },      // #06b6d4
+        violet: { r: 168, g: 85, b: 247 },   // #a855f7
+        emerald: { r: 16, g: 185, b: 129 },  // #10b981
+        blue: { r: 59, g: 130, b: 246 }      // #3b82f6
+      };
+    } else {
+      // Business Light Theme: rich executive cobalt, indigo, emerald, sky
+      this.colors = {
+        cyan: { r: 2, g: 132, b: 199 },      // #0284c7 Sky 600
+        violet: { r: 79, g: 70, b: 229 },    // #4f46e5 Indigo 600
+        emerald: { r: 5, g: 150, b: 105 },   // #059669 Emerald 600
+        blue: { r: 37, g: 99, b: 235 }       // #2563eb Blue 600
+      };
+    }
+
+    // Refresh active node colors
+    if (this.nodes && this.nodes.length > 0) {
+      this.nodes.forEach(node => {
+        if (node.colorKey && this.colors[node.colorKey]) {
+          node.color = this.colors[node.colorKey];
+        }
+      });
+    }
+  }
   }
 
   init() {
@@ -355,7 +394,7 @@ class NeuralCanvas {
           const mProximity = 1 - (mdist / this.mouse.radius);
           const mGrad = this.ctx.createLinearGradient(a.x, a.y, this.mouse.x, this.mouse.y);
           mGrad.addColorStop(0, `rgba(${a.color.r}, ${a.color.g}, ${a.color.b}, ${mProximity * 0.6})`);
-          mGrad.addColorStop(1, `rgba(6, 182, 212, ${mProximity * 0.8})`);
+          mGrad.addColorStop(1, `rgba(${this.colors.cyan.r}, ${this.colors.cyan.g}, ${this.colors.cyan.b}, ${mProximity * 0.8})`);
 
           this.ctx.beginPath();
           this.ctx.moveTo(a.x, a.y);
@@ -395,7 +434,7 @@ class NeuralCanvas {
       const w = this.waves[i];
       this.ctx.beginPath();
       this.ctx.arc(w.x, w.y, w.radius, 0, Math.PI * 2);
-      this.ctx.strokeStyle = `rgba(6, 182, 212, ${w.alpha * 0.4})`;
+      this.ctx.strokeStyle = `rgba(${this.colors.cyan.r}, ${this.colors.cyan.g}, ${this.colors.cyan.b}, ${w.alpha * 0.4})`;
       this.ctx.lineWidth = 2.5;
       this.ctx.stroke();
     }
@@ -435,7 +474,7 @@ class NeuralCanvas {
     if (this.mouse.isHovered) {
       this.ctx.beginPath();
       this.ctx.arc(this.mouse.x, this.mouse.y, 14, 0, Math.PI * 2);
-      this.ctx.strokeStyle = 'rgba(6, 182, 212, 0.5)';
+      this.ctx.strokeStyle = `rgba(${this.colors.cyan.r}, ${this.colors.cyan.g}, ${this.colors.cyan.b}, 0.5)`;
       this.ctx.lineWidth = 1.5;
       this.ctx.stroke();
 
